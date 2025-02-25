@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "poem-generator"
+version = "0.1.0"
+description = "A tool to generate poetry."
+authors = ["Matrix Breaker <you@example.com>"]
+
+packages = [
+    { include = "poem_generator" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+generate-counter-response = "counter_response_tool:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
